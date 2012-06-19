@@ -1,0 +1,9 @@
+.ui-dialog-contain {
+    width: 92.5%; /* Change to whatever you want */
+    max-width: 500px;
+    margin: 10% auto 15px auto;
+    padding: 0;
+}
+.ui-select .ui-btn{
+width:180px;
+}

@@ -1,0 +1,10 @@
+<div data-role="header" data-theme="b">
+	<h1>Cinema</h1>
+</div>
+<div data-role="content">
+	<%= link_to "Book Ticket", new_ticket_path, "data-role"=>"button"%>
+</div>
+<div data-role="content">
+	<%= link_to "Cancel Ticket", home_index_path, "data-role"=>"button"%>
+</div>
+

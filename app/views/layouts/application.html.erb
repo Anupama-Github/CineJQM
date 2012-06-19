@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CineJQM</title>
+  <meta name="viewport" content="width=100px", initial-scale="1"> 
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+   <%= stylesheet_link_tag "application", :media => "all" %>
+  <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <%= javascript_include_tag "application" %>
+  <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+  <script>
+    $('div[data-role=page]').live('pagecreate',function(){
+       jQuery('.ui-select, .ui-select a').css({'width':'10%'});
+    });
+    </script>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div data-theme="b" class="ui-page-active" data-role="page">
+    <%= yield %>
+</div>
+</body>
+</html>
