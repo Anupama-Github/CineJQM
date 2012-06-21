@@ -1,10 +1,16 @@
+<div id="company-pg" data-role="page"  data-add-back-btn="true">
 <div data-role="header" data-theme="b">
-	<h1>Cinema</h1>
+	<h1>Aaja Nachle</h1>
+</div>
+
+<div data-role="content">
+ <center><img id="Movie"  src="http://upload.wikimedia.org/wikipedia/en/9/97/Aaja_Nachle_Poster.jpg"/></center>
 </div>
 <div data-role="content">
-	<%= link_to "Book Ticket", new_ticket_path, "data-role"=>"button"%>
+
+	<%= link_to "Book Ticket", new_customer_path, "data-role"=>"button"%>
 </div>
 <div data-role="content">
 	<%= link_to "Cancel Ticket", home_index_path, "data-role"=>"button"%>
 </div>
-
+</div>

@@ -1,0 +1,9 @@
+$(document).ready(function(){
+//alert("hg");
+$("#Movie").mouseover(function(){
+   alert("something");
+});
+
+
+  
+   });

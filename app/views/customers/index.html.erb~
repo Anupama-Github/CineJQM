@@ -2,10 +2,10 @@
 
 <table>
   <tr>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Phone</th>
-    <th>No. of tickets</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
     <th></th>
     <th></th>
     <th></th>
@@ -17,10 +17,14 @@
 
 <% @customers.each do |customer| %>
   <tr>
-    <td><%= customer.name %></td>
-    <td><%= customer.email %></td>
-    <td><%= customer.phone %></td>
-    <td><%= customer.no %></td>
+    <td><%= customer. %></td>
+    <td><%= customer. %></td>
+    <td><%= customer. %></td>
+    <td><%= customer. %></td>
+    <td><%= customer. %></td>
+    <td><%= customer. %></td>
+    <td><%= customer. %></td>
+    <td><%= customer. %></td>
     <td><%= link_to 'Show', customer %></td>
     <td><%= link_to 'Edit', edit_customer_path(customer) %></td>
     <td><%= link_to 'Destroy', customer, confirm: 'Are you sure?', method: :delete %></td>

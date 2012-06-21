@@ -11,7 +11,9 @@
     </div>
   <% end %>
 
-  <%= f.select :ticket.category, options_for_select([["Balcony", "Balcony"], ["First","First"],["Second","Second"]]), { :id => "select_category" } %>
+<%= f.fields_for :tickets do |fi| %>
+     <%= render 'ticket_fields', :f => fi %>
+    <% end %>
 
   <div class="field">
     <%= f.label :name %><br />
@@ -34,7 +36,7 @@
     <%= f.label :no %><br />
     <%= f.text_field :no %>
   </div>
-    <div class="actions">
+    <div class="actions" id="submit">
     <%= f.submit %>
   </div>
 <% end %>

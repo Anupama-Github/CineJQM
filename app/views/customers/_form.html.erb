@@ -15,8 +15,6 @@
      <%= render 'ticket_fields', :f => fi %>
     <% end %>
 
-
-  
   <div class="field">
     <%= f.label :name %><br />
     <%= f.text_field :name %>
@@ -38,7 +36,7 @@
     <%= f.label :no %><br />
     <%= f.text_field :no %>
   </div>
-    <div class="actions">
+    <div class="actions" id="submit" data-rel="dialog">
     <%= f.submit %>
   </div>
 <% end %>
