@@ -42,9 +42,10 @@ class CustomersController < ApplicationController
   # POST /customers.json
   def create
     @customer = Customer.new(params[:id])
-    @customer.update_attributes(:name=>params[:customer][:name],:email=>params[:customer][:email],:phone=>params[:customer][:phone],:no=>params[:customer][:no],:ccn=>params[:customer][:ccn])
+    @nooftickets = params[:customer][:no]+params[:slider]
+    @customer.update_attributes(:name=>params[:customer][:name],:email=>params[:customer][:email],:phone=>params[:customer][:phone],:no=>@nooftickets,:ccn=>params[:customer][:ccn])
      
-     @tickets = params[:customer][:no]
+     @tickets = params[:customer][:no]+params[:slider]
      @length=@tickets.length
      @nos=Integer(@tickets[1..@length])
      @pos=@tickets[0]
@@ -83,6 +84,7 @@ class CustomersController < ApplicationController
 
         format.html { redirect_to @customer, notice: 'Ticket was successfully booked.' }
         format.json { render json: @customer, status: :created, location: @customer }
+        format.js
       else
         format.html { render action: "new" }
         format.json { render json: @customer.errors, status: :unprocessable_entity }

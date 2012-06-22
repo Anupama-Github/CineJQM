@@ -33,10 +33,12 @@
     <%= f.text_field :ccn %>
   </div>
   <div class="field">
-    <%= f.label :no %><br />
+    <%= f.label :Type %><br />
     <%= f.text_field :no %>
+    <label for="slider">No:</label>
+    <input type="range" name="slider" id="slider" value="0" min="0" max="10" />
   </div>
-    <div class="actions" id="submit">
+    <div class="actions" >
     <%= f.submit %>
   </div>
 <% end %>

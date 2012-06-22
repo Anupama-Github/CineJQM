@@ -1,7 +1,7 @@
 
 
 <div data-role="fieldcontain">
-<%= f.autocomplete_field :ticket_category, autocomplete_ticketcount_category_ticketcounts_path,:update_elements => { :cost => "#ticket_cost", :nooftickets =>"#ticket_count"} ,:id => "#ticket_category"%>
+<%= f.autocomplete_field :ticket_category, autocomplete_ticketcount_category_ticketcounts_path,:update_elements => { :cost => "#ticket_cost", :nooftickets =>"#ticket_count"} ,:id => "ticket_category"%>
 </br>
     <%= f.label :cost %><br />
     <%= f.text_field :ticket_cost, :id=> "ticket_cost" %><br />
